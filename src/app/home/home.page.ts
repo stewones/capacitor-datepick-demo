@@ -19,7 +19,14 @@ export class HomePage {
   }
 
   show() {
-    datepick.present({}).then(date => (this.selectedDate = date.value));
+    datepick
+      .present({
+        mode: 'date',
+        locale: 'pt_BR',
+        current: '13/07/2019',
+        format: 'dd/MM/yyyy'
+      })
+      .then(date => (this.selectedDate = date.value));
   }
 
   darkMode() {
