@@ -10,32 +10,30 @@ const datepick = new Datepick();
 })
 export class HomePage {
   selectedDate: string;
-  mode: 'dark' | 'light' = 'dark';
+  theme: 'dark' | 'light' = 'light';
 
   constructor() {}
 
-  ngOnInit() {
-    datepick.darkMode();
-  }
+  ngOnInit() {}
 
   show() {
     datepick
       .present({
         mode: 'date',
         locale: 'pt_BR',
-        current: '13/07/2019',
-        format: 'dd/MM/yyyy'
+        format: 'dd/MM/yyyy',
+        date: '13/07/2019',
+        theme: this.theme,
+        background: this.theme === 'dark' ? '#333333' : '#ffffff'
       })
       .then(date => (this.selectedDate = date.value));
   }
 
   darkMode() {
-    this.mode = 'dark';
-    datepick.darkMode();
+    this.theme = 'dark';
   }
 
   lightMode() {
-    this.mode = 'light';
-    datepick.lightMode();
+    this.theme = 'light';
   }
 }

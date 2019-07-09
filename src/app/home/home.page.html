@@ -9,10 +9,10 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [ngClass]="{ dark: mode === 'dark' }">
+<ion-content [ngClass]="{ dark: theme === 'dark' }">
   <ion-list lines="none">
     <ion-list-header>
-      <ion-label>{{ mode }} mode</ion-label>
+      <ion-label>{{ theme }} mode</ion-label>
     </ion-list-header>
     <ion-item (click)="show()">
       <ion-icon slot="start" color="medium" name="book"></ion-icon>
@@ -27,6 +27,16 @@
       <ion-label>Light Mode</ion-label>
     </ion-item>
   </ion-list>
-
+  <div text-center>
+    ---<br />
+    ---<br />
+    ---<br />
+    ---<br />
+    ---<br />
+    ---<br />
+    ---<br />
+    ---<br />
+    ---<br />
+  </div>
   <h2 *ngIf="selectedDate" text-center>{{ selectedDate }}</h2>
 </ion-content>
