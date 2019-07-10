@@ -18,25 +18,33 @@
       <ion-icon slot="start" color="medium" name="book"></ion-icon>
       <ion-label>Show</ion-label>
     </ion-item>
-    <ion-item (click)="darkMode()">
-      <ion-icon slot="start" color="medium" name="book"></ion-icon>
-      <ion-label>Dark Mode</ion-label>
-    </ion-item>
     <ion-item (click)="lightMode()">
       <ion-icon slot="start" color="medium" name="book"></ion-icon>
       <ion-label>Light Mode</ion-label>
     </ion-item>
+    <ion-item (click)="darkMode()">
+      <ion-icon slot="start" color="medium" name="book"></ion-icon>
+      <ion-label>Dark Mode</ion-label>
+    </ion-item>
+    <ion-list-header>
+      <ion-label>only in android</ion-label>
+    </ion-list-header>
+    <ion-item (click)="spinner()">
+      <ion-icon slot="start" color="medium" name="book"></ion-icon>
+      <ion-label>Spinner</ion-label>
+    </ion-item>
+    <ion-item (click)="calendar()">
+      <ion-icon slot="start" color="medium" name="book"></ion-icon>
+      <ion-label>Calendar</ion-label>
+    </ion-item>
+    <ion-item (click)="dateMode()">
+      <ion-icon slot="start" color="medium" name="book"></ion-icon>
+      <ion-label>Date Mode</ion-label>
+    </ion-item>
+    <ion-item (click)="timeMode()">
+      <ion-icon slot="start" color="medium" name="book"></ion-icon>
+      <ion-label>Time Mode</ion-label>
+    </ion-item>
   </ion-list>
-  <div text-center>
-    ---<br />
-    ---<br />
-    ---<br />
-    ---<br />
-    ---<br />
-    ---<br />
-    ---<br />
-    ---<br />
-    ---<br />
-  </div>
-  <h2 *ngIf="selectedDate" text-center>{{ selectedDate }}</h2>
+  <h2 text-center>{{ selectedDate }}</h2>
 </ion-content>

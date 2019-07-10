@@ -4,11 +4,6 @@
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
-  "plugins": {
-    "DatepickPlugin": {
-      "background": "#333333"
-    }
-  },
   "server": {
     "url": "http://192.168.1.7:8100"
   }
