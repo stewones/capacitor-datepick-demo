@@ -21,7 +21,7 @@
     "@angular/platform-browser": "^7.2.2",
     "@angular/platform-browser-dynamic": "^7.2.2",
     "@angular/router": "^7.2.2",
-    "@capacitor-community/date-picker": "file:../@capacitor-community-datepicker",
+    "@capacitor-community/date-picker": "latest",
     "@capacitor/android": "latest",
     "@capacitor/cli": "latest",
     "@capacitor/core": "latest",
