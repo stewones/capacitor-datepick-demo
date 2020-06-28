@@ -3,15 +3,15 @@ import {
   Datepick,
   DatepickMode,
   DatepickType,
-  DatepickTheme
-} from 'capacitor-datepick';
+  DatepickTheme,
+} from '@capacitor-community/date-picker';
 
 const datepick = new Datepick();
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss']
+  styleUrls: ['home.page.scss'],
 })
 export class HomePage {
   selectedDate: string;
@@ -50,9 +50,9 @@ export class HomePage {
         theme: this.theme, // light/dark
         doneText: 'Select',
         cancelText: 'Exit',
-        is24h: false // available for time mode
+        is24h: false, // available for time mode
       })
-      .then(date => (this.selectedDate = date.value));
+      .then((date) => (this.selectedDate = date.value));
   }
 
   darkMode() {

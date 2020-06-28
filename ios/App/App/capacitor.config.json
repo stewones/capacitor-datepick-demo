@@ -4,7 +4,9 @@
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
-  "server": {
-    "url": "http://192.168.1.7:8100"
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 12345
+    }
   }
 }
